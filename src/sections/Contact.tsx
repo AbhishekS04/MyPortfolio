@@ -21,6 +21,9 @@ export const ContactSection = () => {
                 I'm always open to discussing product design work or
                 partnerships. Let's create something amazing together.
               </p>
+              <p className="text-sm mt-2 md:text-base">
+                I&apos;d like to connect with you.
+              </p>
             </div>
             <div className="relative z-50">
               <a
