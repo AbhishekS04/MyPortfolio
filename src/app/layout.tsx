@@ -1,20 +1,35 @@
 import type { Metadata } from "next";
 import { Inter, Calistoga } from "next/font/google";
+import { Analytics } from '@vercel/analytics/react';
+import { ThemeProvider } from 'next-themes';
 import "./globals.css";
 import { twMerge } from "tailwind-merge";
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
+const inter = Inter({ 
+  subsets: ["latin"], 
+  variable: "--font-sans",
+  display: 'swap', // Optimize font loading
+});
+
 const calistoga = Calistoga({
   subsets: ["latin"],
   variable: "--font-serif",
   weight: ["400"],
+  display: 'swap',
 });
 
 export const metadata: Metadata = {
-  title: "DevAura",
-  description: " Created by Abhishek-Singh",
+  title: "DevAura | Professional Portfolio",
+  description: "Professional portfolio created by Abhishek Singh - Full Stack Developer",
+  keywords: ["portfolio", "developer", "web development", "react", "next.js"],
+  authors: [{ name: "Abhishek Singh" }],
+  openGraph: {
+    title: "DevAura",
+    description: "Professional Portfolio by Abhishek Singh",
+    type: "website",
+  },
   icons: {
-    icon: "kratos.jpg",
+    icon: "/kratos.jpg",
   },
 };
 
@@ -24,15 +39,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
+      <head />
       <body
         className={twMerge(
           inter.variable,
           calistoga.variable,
-          "bg-gray-900 text-white antialiased font-sans"
+          "min-h-screen bg-gray-900 text-white antialiased font-sans"
         )}
       >
-        {children}
+        <ThemeProvider attribute="class" defaultTheme="dark">
+          {children}
+          <Analytics />
+        </ThemeProvider>
       </body>
     </html>
   );
