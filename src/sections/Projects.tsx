@@ -1,5 +1,6 @@
 import TypingGhost from "@/assets/images/project2.png";
 import MovieReccomendationSystem from "@/assets/images/projet11.png";
+import Devportfolio from "@/assets/images/project-3.png";
 import Image from "next/image";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
@@ -29,6 +30,18 @@ const portfolioProjects = [
     ],
     link: "https://recommendation-system-wine.vercel.app/",
     image: MovieReccomendationSystem,
+  },
+  {
+    company: "Dev portfolio",
+    year: "2024",
+    title: "Portfolio",
+    results: [
+      { title: "Showcased portfolio to highlight key projects and skills" },
+      { title: "Enhanced user interface for seamless navigation" },
+      { title: "Optimized design for improved user engagement" },
+    ],
+    link: "https://dev-aura-devaura.vercel.app/",
+    image: Devportfolio,
   },
 ];
 
