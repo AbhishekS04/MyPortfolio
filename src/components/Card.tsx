@@ -25,3 +25,8 @@ export const Card = ({
     </div>
   );
 };
+
+
+
+
+
