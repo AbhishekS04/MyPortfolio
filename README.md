@@ -25,4 +25,6 @@ Copyright (c) 2024 AbhishekS04. All rights reserved.
 
 ---
 
-For permissions or inquiries, please contact the owner at [9883511660].
+For permissions or inquiries, please contact the owner by clicking the button below:
+
+[Contact the Owner](mailto:abhishek23main@gmail.com)
