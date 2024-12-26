@@ -1,4 +1,7 @@
+"use client";
+
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
+import { useState, useEffect } from 'react';
 
 const footerLinks = [
   {
@@ -20,6 +23,25 @@ const footerLinks = [
 ];
 
 export const Footer = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const toggleVisibility = () => {
+      if (window.pageYOffset > 300) {
+        setIsVisible(true);
+      } else {
+        setIsVisible(false);
+      }
+    };
+
+    window.addEventListener('scroll', toggleVisibility);
+    return () => window.removeEventListener('scroll', toggleVisibility);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <footer className="relative z-10 overflow-x-clip"> {/* Adjusted z-index */}
       <div className="absolute h-[400px] w-[1600px] bottom-0 left-1/2 -translate-x-1/2 bg-emerald-300/30 [mask-image:radial-gradient(50%_50%_at_bottom_center,black,transparent)]"></div>
@@ -43,6 +65,14 @@ export const Footer = () => {
           </nav>
         </div>
       </div>
+      <button
+        onClick={scrollToTop}
+        className={`fixed bottom-4 right-4 w-12 h-12 bg-gray-500 bg-opacity-50 backdrop-blur-sm text-white rounded-full shadow-lg transition-opacity transition-transform duration-500 ease-in-out ${
+          isVisible ? 'opacity-100 scale-100 animate-pulse' : 'opacity-0 scale-95 pointer-events-none'
+        } hover:scale-110`}
+      >
+        ↑
+      </button>
     </footer>
   );
 };
