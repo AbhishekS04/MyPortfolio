@@ -147,7 +147,7 @@ export const HeroSection = () => {
 
           {/* Let's Connect Button */}
           <a
-            href="https://form.jotform.com/243606804755461"
+            href="https://www.linkedin.com/in/abhishek-singh-045312292"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl z-10"
