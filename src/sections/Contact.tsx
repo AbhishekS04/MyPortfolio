@@ -28,9 +28,8 @@ export const ContactSection = () => {
             <div className="relative z-50">
               <a
               
-              href="https://mail.google.com/mail/?view=cm&fs=1&to=abhishek23main@gmail.com&su=Contact%20Request&body=Hello%2C%20I%20would%20like%20to%20connect%20with%20you."
-              target="_blank"
-              rel="noopener noreferrer"
+              href="mailto:abhishek23main@gmail.com&su=Contact%20Request&body=Hello%2C%20I%20would%20like%20to%20connect%20with%20you."
+            
               role="button"
                 className="relative z-50 text-white bg-gray-900 inline-flex items-center px-6 h-12 rounded-xl gap-2 w-max border border-gray-900 mt-2"
               >
