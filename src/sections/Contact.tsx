@@ -72,14 +72,14 @@ export const ContactSection = () => {
                 <div className={`absolute mt-2 w-48 rounded-md backdrop-blur-md transition-all duration-300 ease-in-out ${showDropdown ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-2'}`}>
                   <button
                     onClick={() => handleEmailClientSelect("gmail")}
-                    className="relative z-50 text-white bg-gray-600 bg-opacity-50 backdrop-blur-sm hover:bg-gray-700 inline-flex items-center px-6 h-12 rounded-xl gap-2 w-full border border-gray-500 mt-2 transition-colors duration-300 ease-in-out"
+                    className="relative z-50 text-white bg-gray-500 bg-opacity-50 backdrop-blur-sm hover:bg-gray-700 inline-flex items-center px-6 h-12 rounded-xl gap-2 w-full border border-gray-800 mt-2 transition-colors duration-300 ease-in-out"
                   >
                     <span className="font-semibold">Gmail</span>
                     <ArrowUpRightIcon className="w-4 h-4" />
                   </button>
                   <button
                     onClick={() => handleEmailClientSelect("outlook")}
-                    className="relative z-50 text-white bg-gray-600 bg-opacity-50 backdrop-blur-sm hover:bg-gray-700 inline-flex items-center px-6 h-12 rounded-xl gap-2 w-full border border-gray-500 mt-2 transition-colors duration-300 ease-in-out"
+                    className="relative z-50 text-white bg-gray-500 bg-opacity-50 backdrop-blur-sm hover:bg-gray-700 inline-flex items-center px-6 h-12 rounded-xl gap-2 w-full border border-gray-800 mt-2 transition-colors duration-300 ease-in-out"
                   >
                     <span className="font-semibold">Outlook</span>
                     <ArrowUpRightIcon className="w-4 h-4" />
