@@ -49,7 +49,7 @@ export const Header = () => {
             onClick={(e) => handleClick(e, link.href)}
             className={`nav-item ${
               link.title === "Resume"
-                ? "bg-white text-gray-900 hover:bg-white/70 hover:text-gray-900"
+                ? "bg-white text-gray-900 hover:bg-white/70 hover:text-gray-900 hidden md:block"
                 : ""
             }`}
             download={link.title === "Resume" ? "test.pdf" : undefined}
