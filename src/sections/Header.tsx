@@ -19,21 +19,15 @@ const headerLinks = [
     title: "Contact",
     href: "#contact",
   },
-  {
-    title: "Resume",
-    href: "/assets/pdf/test-resume.pdf", 
-  },
 ];
 
 export const Header = () => {
   const handleClick = useCallback(
     (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
-      if (href.startsWith("#")) {
-        e.preventDefault();
-        const target = document.querySelector(href);
-        if (target) {
-          target.scrollIntoView({ behavior: "smooth" });
-        }
+      e.preventDefault();
+      const target = document.querySelector(href);
+      if (target) {
+        target.scrollIntoView({ behavior: "smooth" });
       }
     },
     []
@@ -48,11 +42,10 @@ export const Header = () => {
             href={link.href}
             onClick={(e) => handleClick(e, link.href)}
             className={`nav-item ${
-              link.title === "Resume"
-                ? "bg-white text-gray-900 hover:bg-white/70 hover:text-gray-900 hidden md:block"
+              link.title === "Contact"
+                ? "bg-white text-gray-900 hover:bg-white/70 hover:text-gray-900"
                 : ""
             }`}
-            download={link.title === "Resume" ? "test.pdf" : undefined}
           >
             {link.title}
           </a>
