@@ -26,16 +26,14 @@ export const ContactSection = () => {
               </p>
             </div>
             <div className="relative z-50">
-              <a
-              
-              href="mailto:abhishek23main@gmail.com&su=Contact%20Request&body=Hello%2C%20I%20would%20like%20to%20connect%20with%20you."
-            
-              role="button"
+                <a
+                href="mailto:abhishek23main@gmail.com?subject=Contact%20Request&body=Hello%2C%20I%20would%20like%20to%20connect%20with%20you."
+                role="button"
                 className="relative z-50 text-white bg-gray-900 inline-flex items-center px-6 h-12 rounded-xl gap-2 w-max border border-gray-900 mt-2"
-              >
+                >
                 <span className="font-semibold">Contact Me</span>
                 <ArrowUpRightIcon className="size-4" />
-              </a>
+                </a>
             </div>
           </div>
         </div>
