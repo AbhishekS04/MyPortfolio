@@ -20,7 +20,7 @@ const calistoga = Calistoga({
 
 export const metadata: Metadata = {
   title: "DevAura | Professional Portfolio",
-  description: "Professional portfolio created by Abhishek Singh - Full Stack Developer",
+  description: "Professional portfolio created by Abhishek Singh",
   keywords: ["portfolio", "developer", "web development", "react", "next.js"],
   authors: [{ name: "Abhishek Singh" }],
   openGraph: {
