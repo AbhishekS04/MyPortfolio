@@ -40,7 +40,7 @@ const portfolioProjects = [
       { title: "Enhanced user interface for seamless navigation" },
       { title: "Optimized design for improved user engagement" },
     ],
-    link: "https://dev-aura-devaura.vercel.app/",
+    link: "https://www.devaura.tech",
     image: Devportfolio,
   },
 ];
