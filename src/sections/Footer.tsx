@@ -20,6 +20,7 @@ const footerLinks = [
     title: "Instagram",
     href: "https://www.instagram.com/_.abhishek2310",
   },
+  
 ];
 
 export const Footer = () => {
