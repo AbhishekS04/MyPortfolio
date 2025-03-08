@@ -8,7 +8,6 @@ import StarIcons from "@/assets/icons/star.svg";
 import { HeroOrbit } from "@/components/HeroOrbit";
 import SparkelIcons from "@/assets/icons/sparkle.svg";
 import React from 'react';
-import Button from "@/components/Button";
 
 export const HeroSection = () => {
   const handleExploreClick = () => {
@@ -155,9 +154,6 @@ export const HeroSection = () => {
             <span>👋</span>
             <span className="font-semibold">Let&apos;s Connect</span>
           </a>
-        <div className="px-6 rounded-xl z-10 text-4xl md:text-5xl text-center mx-auto font-jetbrains-mono-bold text-white ">
-          <Button />
-        </div>
         </div>
       </div>
     </div>
