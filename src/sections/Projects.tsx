@@ -43,6 +43,18 @@ const portfolioProjects = [
     link: "https://www.devaura.tech",
     image: Devportfolio,
   },
+  {
+    company: "My GitHub",
+    year: "23-25",
+    title: "Check All My Projects",
+    results: [
+      { title: "Check out all my projects on GitHub" },
+      { title: "Contribute to open-source projects" },
+      { title: "Collaborate on exciting projects" },
+    ],
+    link: "https://www.github.com/AbhishekS04",
+    image: "",
+  },
 ];
 
 export const ProjectsSection = () => {
