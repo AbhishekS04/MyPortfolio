@@ -20,6 +20,10 @@ const footerLinks = [
     title: "Instagram",
     href: "https://www.instagram.com/_.abhishek2310",
   },
+  {
+    title: "Discord",
+    href: "https://discord.gg/AznSv6mh",
+  },
   
 ];
 
