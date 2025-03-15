@@ -1,3 +1,5 @@
+"use client";
+
 import TypingGhost from "@/assets/images/project2.png";
 import MovieReccomendationSystem from "@/assets/images/projet11.png";
 import Devportfolio from "@/assets/images/project-3.png";
