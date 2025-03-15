@@ -2,6 +2,7 @@ import TypingGhost from "@/assets/images/project2.png";
 import MovieReccomendationSystem from "@/assets/images/projet11.png";
 import Devportfolio from "@/assets/images/project-3.png";
 import Image from "next/image";
+import explore from "@/assets/images/explore.png";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
 import { SectionHeader } from "@/components/SectionHedder";
@@ -16,7 +17,7 @@ const portfolioProjects = [
       { title: "Improved typing accuracy by 30%" },
       { title: "Enhanced user engagement by 40%" },
     ],
-    link: "https://typing-ghost.vercel.app/",
+    link: "https://typing-ghost.vercel.app",
     image: TypingGhost,
   },
   {
@@ -28,7 +29,7 @@ const portfolioProjects = [
       { title: "Increased user retention by 20%" },
       { title: "Enhanced user satisfaction by 35%" },
     ],
-    link: "https://recommendation-system-wine.vercel.app/",
+    link: "https://recommendation-system-wine.vercel.app",
     image: MovieReccomendationSystem,
   },
   {
@@ -53,7 +54,7 @@ const portfolioProjects = [
       { title: "Collaborate on exciting projects" },
     ],
     link: "https://www.github.com/AbhishekS04",
-    image: "",
+    image: explore,
   },
 ];
 
